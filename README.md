@@ -1,0 +1,3 @@
+# Expo cli ile çalıştığım 2. projem
+## Bu projede de en büyük yardımcım react native resmi wep adresi oldu...
+### İnceleyen herkese çok teşekkür ederim
