@@ -20,9 +20,9 @@ const App = () => {
 
   const navigationView = () => (
     <View style={[styles.container, styles.navigationContainer]}>
-      <Text style={styles.paragraph}>I'm in the Drawer!</Text>
+      <Text style={styles.paragraph}>Merhabalar!...</Text>
       <Button
-        title="Close drawer"
+        title="Kapat"
         onPress={() => drawer.current.closeDrawer()}
       />
     </View>
@@ -35,16 +35,16 @@ const App = () => {
       drawerPosition={drawerPosition}
       renderNavigationView={navigationView}>
       <View style={styles.container}>
-        <Text style={styles.paragraph}>Drawer on the {drawerPosition}!</Text>
+        <Text style={styles.paragraph}>Pozisyon {drawerPosition}!</Text>
         <Button
-          title="Change Drawer Position"
+          title="Sağdan mi Soldan mi"
           onPress={() => changeDrawerPosition()}
         />
         <Text style={styles.paragraph}>
-          Swipe from the side or press button below to see it!
+         Görmek için Başlatın !
         </Text>
         <Button
-          title="Open drawer"
+          title="Draweri başlat"
           onPress={() => drawer.current.openDrawer()}
         />
       </View>
@@ -60,11 +60,11 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   navigationContainer: {
-    backgroundColor: 'gray',
+    backgroundColor: 'orange',
   },
   paragraph: {
     padding: 16,
-    fontSize: 25,
+    fontSize: 30,
     textAlign: 'center',
   },
 });
